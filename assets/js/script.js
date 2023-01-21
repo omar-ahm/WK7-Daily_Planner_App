@@ -22,3 +22,22 @@ var currentTime = new Date().getHours();
         $(this).addClass('future');
     }
 });
+
+// set up variables to store user input into local storage
+var textAreas = $(".description");
+var saveBtn = $(".saveBtn");
+
+// Load the data stored in local storage
+textAreas.each(function(index) {
+    var key = "textArea" + index;
+    $(this).val(localStorage.getItem(key));
+});
+
+// Button to save user input events 
+saveBtn.on("click", function() {
+    var textArea = $(this).siblings(".description");
+    var textAreaIndex = textAreas.index(textArea);
+    var key = "textArea" + textAreaIndex;
+    localStorage.setItem(key, textArea.val())
+
+})
