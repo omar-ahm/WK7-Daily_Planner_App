@@ -19,7 +19,7 @@ To create a daily planner application that does the following:
 ---
 ## Animation & Link to deployed site
 ---
-Link: https://omar-ahm.github.io/WK6_Code_Quiz_Challenge/
+Link: https://omar-ahm.github.io/WK7-Daily_Planner_App/
 #
 
 ![Alt text](assets/images/05-third-party-apis-homework-demo.gif)
